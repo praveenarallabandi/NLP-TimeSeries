@@ -89,7 +89,7 @@ def extract_xmltag_timeml(xml_file_dir,raw_text):
     return posi_info_dict
 
 def extract_xmltag_anafora(xml_file_dir,raw_text):
-    delete_annotation = ["Event","Modifier","PreAnnotation","NotNormalizable","MAKEINSTANCE","TLINK", "SLINK"]
+    delete_annotation = ["Event","Modifier","PreAnnotation","NotNormalizable","MAKEINSTANCE","TLINK", "SLINK", "ALINK"]
     print('extract_xmltag_anafora - %s' % xml_file_dir)
     for child in ET.parse(xml_file_dir).getroot():
         print(child.tag)
@@ -106,7 +106,7 @@ def extract_xmltag_anafora(xml_file_dir,raw_text):
     return posi_info_dict
 
 def extract_xmltag_anafora_pred(xml_file_dir,raw_text):
-    filter_annotation = ["MAKEINSTANCE","TLINK", "SLINK"]
+    filter_annotation = ["MAKEINSTANCE","TLINK", "SLINK","ALINK"]
     data = anafora.AnaforaData.from_file(xml_file_dir)
     print('extract_xmltag_anafora_pred - %s' % xml_file_dir)
     posi_info_dict = dict()
