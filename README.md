@@ -4,37 +4,19 @@
 Python version: 3.6.2
 Python Package: h5py, nltk 3.2.4, anaforatools, keras 2.2.0 , theano 1.0.2,regex 2.4.144
 
-## Package issue
-* StanfordPnOSTagger failed to tag the underscore, see https://github.com/nltk/nltk/issues/1632
-* Please change the code #1 to #2 in nltk.standford.py:
-```
-#1 word_tags = tagged_word.strip().split(self._SEPARATOR)
-#2 word_tags = tagged_word.strip().rsplit(self._SEPARATOR,1)
-```
-
-
 
 ## Usages
-* `preprocess.py` - Extract features from documents and generate the model input files.
-* `output.py` - Generate the SCATE annofora annotation for the documents.
+* `preprocess.py` - Extract features from documents and generate the model input files and annofora annotations
 * `model_training.py` - Train a time entity identification models.
 
 
-
-
-To processe the documents, please run:
+To processe the documents, please run - Step1:
 ```
-$ python preprocess.py -raw "raw_documents" -xml "xml_path" -processed_output "the path for storing the processing files" -model_output "the_model_input_files"
+$  python preprocess.py -raw Testing/input -xml Testing/annotationXml -processed_output Testing/po -model_output Testing/output/model
 ```
 
-
-To generate the SCATE anafora outputfiles:
+To train a time entity identification model - Step2:
 ```
-$ python output.py python output.py -model "the_model_files" -raw "raw_documents" -processed_path "the path for storing the processing files" -input "model_inputs" -out "annonation outputs"
-```
-
-To train a time entity identification model:
-```
-$ python model_training.py -input "model_inputs" -out "model_outputs"
+$ python model_training.py -input Testing/output/model -output Testing/output/trainedModel -raw Testing/input -processed_path Testing/po -input Testing/output/model -out Testing/output
 ```
 
