@@ -5,6 +5,8 @@ import preprocess_functions as process
 import tensorflow as tf
 import keras
 from collections import OrderedDict
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 def prob2classes_multiclasses( prediction):
     print('prediction.shape')
@@ -137,16 +139,16 @@ def get_counts(tag_dict,type):
     return count
 
 def calculate_score(gold,pred):
-    print('gold')
+    """ print('gold')
     print(gold)
     print('pred')
-    print(pred)
+    print(pred) """
     gold_count= get_counts(gold,"gold")
     pred_count = get_counts(pred,"pred")
-    print('gold_count')
+    """ print('gold_count')
     print(gold_count)
     print('pred_count')
-    print(pred_count)
+    print(pred_count) """
 
     true_count = 0
     for start, tag in pred.items():
@@ -160,25 +162,28 @@ def calculate_score(gold,pred):
     prec = true_count/pred_count
     reca = true_count/gold_count
     f1 = 2*prec*reca/(prec+reca+1e-10)
-    return [gold_count,pred_count,true_count,f1]
+    return [gold_count,pred_count,true_count]
 
 def metrics(true_count,pred_count,gold_count):
     precision = true_count / pred_count
     recall = true_count / gold_count
     f1 = 2 * precision * recall / (precision + recall+1e-10)
     print("presion: ", precision, "recall: ", recall, "F1 score: ", f1)
-
+    return [precision, recall, f1]
 
 
 def evaluate(xml_path,output_pred_path,raw_data_path,doc_list,output_format):
     gold_count = 0
     pred_count = 0
     true_count = 0
-    print('xml_path: %s', xml_path)
-    print('doc_list: %s', len(doc_list))
+    """ print('xml_path: %s', xml_path)
+    print('doc_list: %s', len(doc_list)) """
+    precision = []
+    recall = []
+    f1 = []
     for file_id in range(len(doc_list)):
-        print('path: ', os.path.join(xml_path, doc_list[file_id] + "_tag"))
-        print('path: %s', os.path.exists(os.path.join(xml_path, doc_list[file_id] + "_tag.txt")))
+        """ print('path: ', os.path.join(xml_path, doc_list[file_id] + "_tag"))
+        print('path: %s', os.path.exists(os.path.join(xml_path, doc_list[file_id] + "_tag.txt"))) """
         if os.path.exists(os.path.join(xml_path, doc_list[file_id] + "_tag.txt")):
             gold_tag_dict = get_gold_dict(read.readfrom_json(os.path.join(xml_path, doc_list[file_id] + "_tag")))
             output_path = os.path.join(output_pred_path, doc_list[file_id], doc_list[file_id] + output_format)
@@ -188,4 +193,16 @@ def evaluate(xml_path,output_pred_path,raw_data_path,doc_list,output_format):
             gold_count += scores[0]
             pred_count += scores[1]
             true_count += scores[2]
-            metrics(true_count, pred_count, gold_count)
+            result = metrics(true_count, pred_count, gold_count)
+            precision.append(result[0])
+            recall.append(result[1])
+            f1.append(result[2])
+
+    fig = plt.figure(figsize=(6, 6))
+    ax = fig.add_subplot(111, projection='3d')
+    ax.scatter(precision, recall, f1,
+            linewidths=1, alpha=.7,
+            edgecolor='k',
+            s = 200,
+            c=f1)
+    plt.show()

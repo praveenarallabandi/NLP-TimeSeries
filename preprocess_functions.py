@@ -108,10 +108,10 @@ def extract_xmltag_anafora(xml_file_dir,raw_text):
 def extract_xmltag_anafora_pred(xml_file_dir,raw_text):
     filter_annotation = ["MAKEINSTANCE","TLINK", "SLINK","ALINK"]
     data = anafora.AnaforaData.from_file(xml_file_dir)
-    print('extract_xmltag_anafora_pred - %s' % xml_file_dir)
+    #print('extract_xmltag_anafora_pred - %s' % xml_file_dir)
     posi_info_dict = dict()
     for annotation in data.annotations:
-
+        try:
             if annotation.spans[0][0] in posi_info_dict:
                 posi_info_dict[annotation.spans[0][0]].append([annotation.spans[0][1],annotation.type])
             else:
@@ -122,6 +122,8 @@ def extract_xmltag_anafora_pred(xml_file_dir,raw_text):
                     anna_info.append(terms)
                     anna_info.append([annotation.spans[0][1],annotation.type])
                     posi_info_dict[annotation.spans[0][0]] = anna_info
+        except IndexError:
+            pass
     posi_info_dict = OrderedDict(sorted(posi_info_dict.items()))
     return posi_info_dict
 

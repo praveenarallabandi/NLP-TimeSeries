@@ -564,25 +564,6 @@
 				<class>STATE</class>
 			</properties>
 		</entity>
-		<entity>
-			<id>67@e@CNN19980213.2130.0155@gold</id>
-			<type>EVENT</type>
-			<span>2141,2146</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<relation>
-			<id>68@r@CNN19980213.2130.0155@gold</id>
-			<type>MAKEINSTANCE</type>
-			<properties>
-				<eventID>2@e@CNN19980213.2130.0155@gold</eventID>
-				<polarity>POS</polarity>
-				<pos>VERB</pos>
-				<tense>PRESENT</tense>
-				<aspect>NONE</aspect>
-			</properties>
-		</relation>
 		<relation>
 			<id>69@r@CNN19980213.2130.0155@gold</id>
 			<type>MAKEINSTANCE</type>

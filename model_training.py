@@ -26,12 +26,12 @@ else:
 def load_hdf5(filename,labels):
     data = list()
     with h5py.File(filename + '.hdf5', 'r') as hf:
-        print("List of datum in this file: ", hf.keys())
+        #print("List of datum in this file: ", hf.keys())
         for label in labels:
             x = hf.get(label)
             x_data = np.array(x)
             del x
-            print("The shape of datum "+ label +": ",x_data.shape)
+            #print("The shape of datum "+ label +": ",x_data.shape)
             data.append(x_data)
     return data
 
@@ -103,7 +103,7 @@ def training(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_fo
                   metrics=['categorical_accuracy'],
                   sample_weight_mode="temporal")
 
-    #model.summary()
+    model.summary()
     """ model_flair = load_model(flair_path)
     model.layers[2].set_weights(model_flair.layers[2].get_weights())
     model.layers[1].set_weights(model_flair.layers[1].get_weights())
@@ -129,12 +129,12 @@ def training(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_fo
     model.save(storage + '/model/model_result.hdf5')
     np.save(storage + '/model/epoch_history.npy', hist.history)
 
-    print('CALLING EVELUATE WITh PARAMS...')
+    """ print('CALLING EVELUATE WITh PARAMS...')
     print(preprocessed_path)
     print(output_pred_path)
     print(raw_data_path)
     print(doc_list)
-    print(output_format)
+    print(output_format) """
     output.evaluate(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format)
 
 if __name__ == "__main__":
