@@ -36,7 +36,7 @@ def load_hdf5(filename,labels):
     return data
 
 
-def training(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format, storage, flair_path, sampleweights,char_x,trainy_interval,trainy_operator_ex,trainy_operator_im,
+def training(testing,preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format, storage, flair_path, sampleweights,char_x,trainy_interval,trainy_operator_ex,trainy_operator_im,
             char_x_cv, cv_y_interval, cv_y_operator_ex, cv_y_operator_im,batchsize,epoch_size,
               gru_size1 =256,gru_size2 = 150):
 
@@ -135,7 +135,11 @@ def training(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_fo
     print(raw_data_path)
     print(doc_list)
     print(output_format) """
-    output.evaluate(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format)
+    print('testing', testing)
+    if testing:
+        output.evaluate(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format)
+    else:
+         print('Model training complete!')
 
 if __name__ == "__main__":
 
@@ -165,6 +169,9 @@ if __name__ == "__main__":
     parser.add_argument('-raw',
                         help='raw data path',required=True)
 
+    parser.add_argument('-testing',
+                        help='testing',default=False)
+
     parser.add_argument('-format',
                         help='output path for all preprocessed files',default=".TimeML.gold.completed.xml")
 
@@ -178,6 +185,7 @@ if __name__ == "__main__":
     output_pred_path = args.out
     preprocessed_path = args.processed_path
     output_format = args.format
+    testing = args.testing
 
 
     char_x = load_hdf5(input_path + "/input", ["char"])[0]
@@ -205,13 +213,12 @@ if __name__ == "__main__":
     epoch_size = 1
     batchsize = 32
 
-    print('HERE...')
-
     doc_list = []
     for doc in os.listdir(raw_data_path):
         if not doc.endswith(".txt") and not doc.endswith(".npy") and not doc.endswith(".xml") and not doc.endswith(".dct"):
             doc_list.append(doc)
 
-    training(preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format, output_path,flair_path,sampleweights,char_x,trainy_interval,trainy_operator_ex,trainy_operator_im,
+    print('testing', testing)
+    training(testing,preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format, output_path,flair_path,sampleweights,char_x,trainy_interval,trainy_operator_ex,trainy_operator_im,
               char_x_cv, cv_y_interval, cv_y_operator_ex, cv_y_operator_im,batchsize,epoch_size,
               gru_size1 =256,gru_size2 = 150)
