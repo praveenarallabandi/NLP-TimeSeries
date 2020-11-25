@@ -1,2 +1,0 @@
-epoch,dense_1_categorical_accuracy,dense_1_loss,dense_2_categorical_accuracy,dense_2_loss,dense_3_categorical_accuracy,dense_3_loss,loss
-0,0.9412640333175659,1.4541020393371582,0.6809550523757935,1.4079759120941162,0.68238765001297,1.275768518447876,3.9804465770721436

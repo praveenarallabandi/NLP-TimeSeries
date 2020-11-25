@@ -536,42 +536,6 @@
 				<class>OCCURRENCE</class>
 			</properties>
 		</entity>
-		<entity>
-			<id>64@e@CNN19980213.2130.0155@gold</id>
-			<type>TIMEX3</type>
-			<span>2041,2050</span>
-			<properties>
-				<functionInDocument>NONE</functionInDocument>
-				<anchorTimeID>1@e@CNN19980213.2130.0155@gold</anchorTimeID>
-				<value>1998-W08</value>
-				<type>DATE</type>
-				<temporalFunction>true</temporalFunction>
-			</properties>
-		</entity>
-		<entity>
-			<id>65@e@CNN19980213.2130.0155@gold</id>
-			<type>EVENT</type>
-			<span>2055,2062</span>
-			<properties>
-				<class>I_ACTION</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>66@e@CNN19980213.2130.0155@gold</id>
-			<type>EVENT</type>
-			<span>2118,2127</span>
-			<properties>
-				<class>STATE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>67@e@CNN19980213.2130.0155@gold</id>
-			<type>EVENT</type>
-			<span>2141,2146</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
 		<relation>
 			<id>68@r@CNN19980213.2130.0155@gold</id>
 			<type>MAKEINSTANCE</type>

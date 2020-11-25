@@ -429,62 +429,6 @@
 				<class>OCCURRENCE</class>
 			</properties>
 		</entity>
-		<entity>
-			<id>51@e@CNN19980227.2130.0067@gold</id>
-			<type>EVENT</type>
-			<span>2197,2200</span>
-			<properties>
-				<class>REPORTING</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>52@e@CNN19980227.2130.0067@gold</id>
-			<type>EVENT</type>
-			<span>2213,2219</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>53@e@CNN19980227.2130.0067@gold</id>
-			<type>EVENT</type>
-			<span>2237,2250</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>54@e@CNN19980227.2130.0067@gold</id>
-			<type>EVENT</type>
-			<span>2271,2280</span>
-			<properties>
-				<class>I_STATE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>55@e@CNN19980227.2130.0067@gold</id>
-			<type>EVENT</type>
-			<span>2284,2288</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>56@e@CNN19980227.2130.0067@gold</id>
-			<type>EVENT</type>
-			<span>2302,2311</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>57@e@CNN19980227.2130.0067@gold</id>
-			<type>EVENT</type>
-			<span>2330,2338</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
 		<relation>
 			<id>58@r@CNN19980227.2130.0067@gold</id>
 			<type>MAKEINSTANCE</type>

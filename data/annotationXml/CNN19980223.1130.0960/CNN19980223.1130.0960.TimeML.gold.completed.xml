@@ -145,61 +145,6 @@
 				<class>OCCURRENCE</class>
 			</properties>
 		</entity>
-		<entity>
-			<id>17@e@CNN19980223.1130.0960@gold</id>
-			<type>EVENT</type>
-			<span>638,641</span>
-			<properties>
-				<class>PERCEPTION</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>18@e@CNN19980223.1130.0960@gold</id>
-			<type>TIMEX3</type>
-			<span>645,679</span>
-			<properties>
-				<functionInDocument>NONE</functionInDocument>
-				<type>DATE</type>
-				<temporalFunction>false</temporalFunction>
-				<value>1994-WI</value>
-			</properties>
-		</entity>
-		<entity>
-			<id>19@e@CNN19980223.1130.0960@gold</id>
-			<type>EVENT</type>
-			<span>715,719</span>
-			<properties>
-				<class>I_ACTION</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>20@e@CNN19980223.1130.0960@gold</id>
-			<type>EVENT</type>
-			<span>774,778</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>21@e@CNN19980223.1130.0960@gold</id>
-			<type>TIMEX3</type>
-			<span>810,828</span>
-			<properties>
-				<endPoint>1@e@CNN19980223.1130.0960@gold</endPoint>
-				<functionInDocument>NONE</functionInDocument>
-				<value>P2W</value>
-				<type>DURATION</type>
-				<temporalFunction>true</temporalFunction>
-			</properties>
-		</entity>
-		<entity>
-			<id>22@e@CNN19980223.1130.0960@gold</id>
-			<type>EVENT</type>
-			<span>835,844</span>
-			<properties>
-				<class>REPORTING</class>
-			</properties>
-		</entity>
 		<relation>
 			<id>23@r@CNN19980223.1130.0960@gold</id>
 			<type>MAKEINSTANCE</type>

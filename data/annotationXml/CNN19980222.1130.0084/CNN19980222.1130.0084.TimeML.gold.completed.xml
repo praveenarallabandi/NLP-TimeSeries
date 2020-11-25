@@ -164,30 +164,6 @@
 				<mod>EQUAL_OR_LESS</mod>
 			</properties>
 		</entity>
-		<entity>
-			<id>19@e@CNN19980222.1130.0084@gold</id>
-			<type>EVENT</type>
-			<span>630,637</span>
-			<properties>
-				<class>I_ACTION</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>20@e@CNN19980222.1130.0084@gold</id>
-			<type>EVENT</type>
-			<span>642,646</span>
-			<properties>
-				<class>I_ACTION</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>21@e@CNN19980222.1130.0084@gold</id>
-			<type>EVENT</type>
-			<span>652,657</span>
-			<properties>
-				<class>I_STATE</class>
-			</properties>
-		</entity>
 		<relation>
 			<id>22@r@CNN19980222.1130.0084@gold</id>
 			<type>MAKEINSTANCE</type>
