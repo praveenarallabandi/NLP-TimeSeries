@@ -1,8 +1,8 @@
-# timeident
+# Time Series Identification
 
 ## Requirements
 Python version: 3.6.2
-Python Package: h5py, nltk 3.2.4, anaforatools, keras 2.2.0 , theano 1.0.2,regex 2.4.144
+Python Package: h5py, nltk 3.2.4, anaforatools, keras 2.2.0
 
 
 ## Usages
