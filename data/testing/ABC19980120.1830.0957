@@ -1,32 +1,26 @@
-<?xml version="1.0" ?>
-<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>ABC</DOCID>
 
-<DOCID>ABC19980120.1830.0957</DOCID>
+<DCT>19980108</DCT>
 
-<DCT><TIMEX3 tid="t0" type="DATE" value="1998-01-20" temporalFunction="false" functionInDocument="CREATION_TIME">19980120</TIMEX3></DCT>
-
-<EXTRAINFO>
-ABC19980120.1830.0957 NEWS STORY
-</EXTRAINFO>
-
+<TITLE>ABC1998</TITLE>
 <TEXT>
-For his part, Fidel Castro is the ultimate political survivor. People have predicted his demise so many times, and the US has tried to hasten it on several occasions. Time and again, he endures. He has outlasted and sometimes outsmarted eight American presidents. Fidel Castro <EVENT eid="e9" class="OCCURRENCE">invited John Paul to <EVENT eid="e11" class="OCCURRENCE">come for a reason. This is clearly an opportunity for Cuba to look good internationally.
+For his part, Fidel Castro is the ultimate political survivor. People have predicted his demise so many times, and the US has tried to hasten it on several occasions. Time and again, he endures. He has outlasted and sometimes outsmarted eight American presidents. Fidel Castro invited John Paul to come for a reason. This is clearly an opportunity for Cuba to look good internationally.
 
-The entire world will <EVENT eid="e15" class="PERCEPTION">see images of the Pope in Cuba. They'll <EVENT eid="e16" class="PERCEPTION">see images of the Pope with Fidel Castro. It will <EVENT eid="e18" class="OCCURRENCE">give the rest of the world the view that Cuba is like any other nation, something the US has, of course, <EVENT eid="e22" class="I_ACTION">tried to <EVENT eid="e24" class="I_ACTION">persuade the world that it is not.
+The entire world will see images of the Pope in Cuba. They'll see images of the Pope with Fidel Castro. It will give the rest of the world the view that Cuba is like any other nation, something the US has, of course, tried to persuade the world that it is not.
 
-For <TIMEX3 tid="t94" type="DURATION" value="P40Y" mod="EQUAL_OR_LESS" temporalFunction="false" functionInDocument="NONE">nearly forty years</TIMEX3>, the United States has <EVENT eid="e26" class="REPORTING">said categorically it would not <EVENT eid="e99" class="I_ACTION">tolerate totalitarian rule in its own backyard. It is the US economic and political <EVENT eid="e240" class="OCCURRENCE">embargo which has <EVENT eid="e30" class="ASPECTUAL">kept Cuba in a box.
+For nearly forty years, the United States has said categorically it would not tolerate totalitarian rule in its own backyard. It is the US economic and political embargo which has kept Cuba in a box.
 
-The main positive for Castro to <EVENT eid="e32" class="OCCURRENCE">invite the Pope is international, to be <EVENT eid="e100" class="I_STATE">able to <EVENT eid="e35" class="REPORTING">say to the rest of the world, this government is not as closed, as intolerant, uh as totalitarian as some <EVENT eid="e38" class="I_ACTION">make it out to be.
+The main positive for Castro to invite the Pope is international, to be able to say to the rest of the world, this government is not as closed, as intolerant, uh as totalitarian as some make it out to be.
 
-One of the scenarios widely <EVENT eid="e103" class="REPORTING">advanced before the <EVENT eid="e42" class="OCCURRENCE">visit is that through the Pope, Cuba, still <EVENT eid="e44" class="OCCURRENCE">led by Castro, can <EVENT eid="e45" class="ASPECTUAL">begin a more productive relationship with the world. That will, in turn, <EVENT eid="e48" class="OCCURRENCE">bring pressure on Washington to <EVENT eid="e50" class="OCCURRENCE">change.
+One of the scenarios widely advanced before the visit is that through the Pope, Cuba, still led by Castro, can begin a more productive relationship with the world. That will, in turn, bring pressure on Washington to change.
 
-Those observers <EVENT eid="e51" class="I_ACTION">looking for a <EVENT eid="e52" class="OCCURRENCE">battle between uncompromising representatives and very different ideologies will, in all likelihood, be <EVENT eid="e53" class="STATE">disappointed.
+Those observers looking for a battle between uncompromising representatives and very different ideologies will, in all likelihood, be disappointed.
 
-Castro has said that you can be a Communist and still be a Christian. He <EVENT eid="e56" class="REPORTING">says he and the Pope both <EVENT eid="e57" class="I_STATE">want to <EVENT eid="e59" class="ASPECTUAL">end the <EVENT eid="e60" class="OCCURRENCE">exploitation of man by man. The question is who will Cubans <EVENT eid="e378" class="STATE">believe?
+Castro has said that you can be a Communist and still be a Christian. He says he and the Pope both want to end the exploitation of man by man. The question is who will Cubans believe?
 
-The main negative is the risk that the Pope's <EVENT eid="e63" class="OCCURRENCE">visit will <EVENT eid="e64" class="I_ACTION">persuade a great many more Cubans to <EVENT eid="e66" class="OCCURRENCE">break loose of the Cuban government. If so, then the Pope's <EVENT eid="e67" class="OCCURRENCE">visit would really <EVENT eid="e112" class="ASPECTUAL">open up a new chapter in the government's relations with its own society. For the Cuban government, that is the risk.
+The main negative is the risk that the Pope's visit will persuade a great many more Cubans to break loose of the Cuban government. If so, then the Pope's visit would really open up a new chapter in the government's relations with its own society. For the Cuban government, that is the risk.
 
-At the end of the broadcast <TIMEX3 tid="t1000" type="TIME" value="1998-01-20TEV">this evening</TIMEX3>, one more trip around Havana to see what it's been like since the last time. And in just a moment Diane Sawyer will have some other news.
+At the end of the broadcast this evening, one more trip around Havana to see what it's been like since the last time. And in just a moment Diane Sawyer will have some other news.
 </TEXT>
 
 </TimeML>
