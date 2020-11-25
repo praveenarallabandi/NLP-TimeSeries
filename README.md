@@ -20,4 +20,7 @@ To train a time entity identification model - Step2:
 ```
 python model_training.py -input data/model -output data/model/trainedModel -raw data/training -processed_path data/po -input data/model -out data/output
 ```
-
+To test a time entity identification model - Step3:
+```
+python model_training.py -input data/model -output data/model/trainedModel -raw data/training -processed_path data/po -input data/model -out data/output -testing True
+```
