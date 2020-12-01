@@ -218,7 +218,6 @@ if __name__ == "__main__":
         if not doc.endswith(".txt") and not doc.endswith(".npy") and not doc.endswith(".xml") and not doc.endswith(".dct"):
             doc_list.append(doc)
 
-    print('testing', testing)
     training(testing,preprocessed_path,output_pred_path,raw_data_path,doc_list,output_format, output_path,flair_path,sampleweights,char_x,trainy_interval,trainy_operator_ex,trainy_operator_im,
               char_x_cv, cv_y_interval, cv_y_operator_ex, cv_y_operator_im,batchsize,epoch_size,
               gru_size1 =256,gru_size2 = 150)

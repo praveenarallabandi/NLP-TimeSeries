@@ -117,7 +117,6 @@ def extract_xmltag_anafora_pred(xml_file_dir,raw_text):
             else:
                 if annotation.type not in filter_annotation:
                     anna_info = []
-                    print(annotation.spans[0][0], annotation.spans[0][1])
                     terms = raw_text[annotation.spans[0][0]:annotation.spans[0][1]]
                     anna_info.append(terms)
                     anna_info.append([annotation.spans[0][1],annotation.type])
