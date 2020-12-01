@@ -456,46 +456,6 @@
 				<mod>APPROX</mod>
 			</properties>
 		</entity>
-		<entity>
-			<id>53@e@ABC19980108.1830.0711@gold</id>
-			<type>EVENT</type>
-			<span>2184,2194</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>54@e@ABC19980108.1830.0711@gold</id>
-			<type>EVENT</type>
-			<span>2206,2210</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>55@e@ABC19980108.1830.0711@gold</id>
-			<type>EVENT</type>
-			<span>2223,2226</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>56@e@ABC19980108.1830.0711@gold</id>
-			<type>EVENT</type>
-			<span>2248,2252</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>57@e@ABC19980108.1830.0711@gold</id>
-			<type>EVENT</type>
-			<span>2258,2267</span>
-			<properties>
-				<class>OCCURRENCE</class>
-			</properties>
-		</entity>
 		<relation>
 			<id>58@r@ABC19980108.1830.0711@gold</id>
 			<type>MAKEINSTANCE</type>

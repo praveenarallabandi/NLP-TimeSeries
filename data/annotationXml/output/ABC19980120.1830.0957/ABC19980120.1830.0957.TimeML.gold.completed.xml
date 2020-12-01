@@ -193,22 +193,6 @@
 			</properties>
 		</entity>
 		<entity>
-			<id>24@e@ABC19980120.1830.0957@gold</id>
-			<type>EVENT</type>
-			<span>1109,1113</span>
-			<properties>
-				<class>I_ACTION</class>
-			</properties>
-		</entity>
-		<entity>
-			<id>25@e@ABC19980120.1830.0957@gold</id>
-			<type>EVENT</type>
-			<span>1157,1165</span>
-			<properties>
-				<class>REPORTING</class>
-			</properties>
-		</entity>
-		<entity>
 			<id>26@e@ABC19980120.1830.0957@gold</id>
 			<type>EVENT</type>
 			<span>1177,1182</span>
