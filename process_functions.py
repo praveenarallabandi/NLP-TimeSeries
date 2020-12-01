@@ -200,6 +200,9 @@ def evaluate(xml_path,output_pred_path,raw_data_path,doc_list,output_format):
 
     fig = plt.figure(figsize=(6, 6))
     ax = fig.add_subplot(111, projection='3d')
+    ax.set_xlabel('X axis - precision')
+    ax.set_ylabel('Y axis - recall')
+    ax.set_zlabel('Z axis - F1')
     ax.scatter(precision, recall, f1,
             linewidths=1, alpha=.7,
             edgecolor='k',
