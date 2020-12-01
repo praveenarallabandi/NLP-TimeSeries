@@ -9,6 +9,9 @@ Python Package: h5py, nltk 3.2.4, anaforatools, keras 2.2.0
 
 * `preprocess.py` - Extract features from documents and generate the model input files and annofora annotations
 * `model_training.py` - Train a time entity identification models.
+* `data\testing` - Testing data.
+* `data\training` - Training data.
+* `images` - Plot for testing data.
 
 
 To processe the documents, please run - Step1:
