@@ -14,7 +14,7 @@ Python Package: h5py, nltk 3.2.4, anaforatools, keras 2.2.0, numpy, matplotlib
 * `images` - Plot for testing data.
 
 
-**Step1** - Run the below command to processe the documents for Preprocessing un-annotated files
+**Step1** - Run the below command for Preprocessing
 * Will prompt NTLK downloader, select all and all-corpa
 * This will generate processing files in data/po folder
 ```
