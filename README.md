@@ -3,7 +3,7 @@
 ## Requirements
 Python version: 3.6.2
 Python Package: h5py, nltk 3.2.4, anaforatools, keras 2.2.0, numpy, matplotlib
-
+[INSTALL](https://github.com/praveenarallabandi/NLP-TimeSeries/blob/main/INSTALL)
 
 ## Usages
 
