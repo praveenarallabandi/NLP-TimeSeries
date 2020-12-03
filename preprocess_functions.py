@@ -11,14 +11,14 @@ import configparser
 import ssl
 import xml.etree.ElementTree as ET
 
-""" try:
+try:
     _create_unverified_https_context = ssl._create_unverified_context
 except AttributeError:
     pass
 else:
     ssl._create_default_https_context = _create_unverified_https_context 
 
-nltk.download() """
+nltk.download()
 config = configparser.ConfigParser()
 config.read('ident.conf')
 StandforParser = config['Tool']['StandforParser']

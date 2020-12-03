@@ -210,7 +210,7 @@ if __name__ == "__main__":
     sampleweights = [sampleweights_interval,sampleweights_explicit_operator,sampleweights_implicit_operator]
 
 
-    epoch_size = 1
+    epoch_size = 5
     batchsize = 32
 
     doc_list = []
