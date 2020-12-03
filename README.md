@@ -28,7 +28,7 @@ python preprocess.py -raw data/training -xml data/annotationXml -processed_outpu
 python model_training.py -input data/model -output data/model/trainedModel -raw data/training -processed_path data/po -input data/model -out data/output
 ```
 
-**Step2** - Run the below command to test the model
+**Step3** - Run the below command to test the model
 * This will load the trained model and generate the graph with recall, precession and F1 score
 ```
 python model_training.py -input data/model -output data/model/trainedModel -raw data/training -processed_path data/po -input data/model -out data/output -testing True
