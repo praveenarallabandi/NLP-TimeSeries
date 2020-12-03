@@ -1,0 +1,8 @@
+pip install anaforatools
+pip install Keras
+pip install nltk
+pip install numpy
+pip install matplotlib
+pip install h5py
+pip install tensorflow
+pip install argparse

@@ -24,6 +24,7 @@ python preprocess.py -raw data/training -xml data/annotationXml -processed_outpu
 **Step2** - Run the below command to train the RNN model
 * This will train the model and save the model data/model/trainedModel/model/model_result.hdf5
 * epoch size is set to 5 in model_training.py file
+* Note - If prompted for NLTK please ignore it by closing the prompt
 ```
 python model_training.py -input data/model -output data/model/trainedModel -raw data/training -processed_path data/po -input data/model -out data/output
 ```
